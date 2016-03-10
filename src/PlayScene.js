@@ -76,6 +76,7 @@ var PlayLayer = cc.Layer.extend({
             this.SushiSprites[i].removeFromParent();
             this.SushiSprites[i] = undefined;
             this.SushiSprites.splice(i,1);
+            i= i-1;
         }
     },
     addScore : function(){
